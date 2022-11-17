@@ -1,0 +1,7 @@
+raspberries:
+  hosts:
+    pi4: 
+      ansible_host: 192.168.0.41
+  vars:
+    ansible_user: pi
+
