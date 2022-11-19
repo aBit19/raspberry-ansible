@@ -1,0 +1,13 @@
+---
+- name: Upgrade raspberries
+  hosts: raspberries
+  become: yes
+
+  tasks:
+    - name: Update distribution
+      ansible.builtin.apt:
+        update_cache: yes
+
+    - name: Update distribution
+      ansible.builtin.apt:
+        upgrade: full
