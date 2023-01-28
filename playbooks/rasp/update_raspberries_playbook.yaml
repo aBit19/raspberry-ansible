@@ -8,6 +8,6 @@
       ansible.builtin.apt:
         update_cache: yes
 
-    - name: Update distribution
+    - name: Upgrade distribution
       ansible.builtin.apt:
         upgrade: full
